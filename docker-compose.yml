@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  home-portal:
+    build: .
+    container_name: home-portal
+    ports:
+      - '80:80'
+    restart: unless-stopped
+    # Optional: mount source for development
+    # volumes:
+    #   - ./src:/usr/share/nginx/html:ro

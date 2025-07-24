@@ -1,0 +1,7 @@
+# Docker ignore file for home-portal
+.git
+.gitignore
+README.md
+.DS_Store
+*.md
+docker-compose.yml
