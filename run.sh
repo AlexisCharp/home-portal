@@ -19,7 +19,7 @@ run_with_docker() {
 # Function to run with Docker Compose
 run_with_compose() {
     echo "📦 Building and starting with Docker Compose..."
-    docker-compose up -d --build
+    docker compose up -d --build
     
     echo "✅ Home Portal is now running at http://localhost"
 }
@@ -29,14 +29,14 @@ stop_containers() {
     echo "🛑 Stopping containers..."
     docker stop home-portal 2>/dev/null || true
     docker rm home-portal 2>/dev/null || true
-    docker-compose down 2>/dev/null || true
+    docker compose down 2>/dev/null || true
     echo "✅ Containers stopped"
 }
 
 # Function to show logs
 show_logs() {
     echo "📋 Container logs:"
-    docker logs home-portal 2>/dev/null || docker-compose logs
+    docker logs home-portal 2>/dev/null || docker compose logs
 }
 
 # Main menu

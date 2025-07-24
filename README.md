@@ -53,13 +53,13 @@ chmod +x run.sh
 
 ```bash
 # Build and start the container
-docker-compose up -d --build
+docker compose up -d --build
 
 # Stop the container
-docker-compose down
+docker compose down
 
 # View logs
-docker-compose logs
+docker compose logs
 ```
 
 ### Option 3: Manual Docker Commands
