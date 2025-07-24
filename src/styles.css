@@ -1,0 +1,124 @@
+.container {
+  background-color: #131314;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.main-title {
+  font-family: 'Absans', sans-serif;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.section-title {
+  font-family: 'Absans', sans-serif;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  opacity: 30%;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 320px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* AdGuard card */
+.adguard-card {
+  border-color: #67bb70;
+}
+
+.adguard-card .card-title,
+.adguard-card .card-port {
+  color: #d5ffd9;
+}
+
+.n8n-card {
+  border-color: #ea4b71;
+}
+
+.n8n-card .card-title,
+.n8n-card .card-port {
+  color: #faacbe;
+}
+
+/* Card content */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.card-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.card-title {
+  font-family: 'Absans', sans-serif;
+  font-size: 1.25rem;
+}
+
+.card-description {
+  font-family: 'Absans', sans-serif;
+  font-size: 1rem;
+}
+
+.card-port {
+  font-family: 'Absans', sans-serif;
+  font-size: 1rem;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 32px 16px;
+    gap: 24px;
+  }
+
+  .main-title {
+    font-size: 32px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+}

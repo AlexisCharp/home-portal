@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <h1>Home Portal</h1>
+    <div class="container">
+      <h1 class="main-title">Home Portal</h1>
+      <div class="separator"></div>
+      <h2 class="section-title">Apps</h2>
+      <div class="cards-container">
+        <a
+          href="http://192.168.1.2:3001"
+          target="_blank"
+          class="card adguard-card"
+        >
+          <div class="card-header">
+            <img src="./assets/adguard.png" alt="AdGuard" class="card-icon" />
+            <span class="card-title">AdGuard</span>
+          </div>
+          <p class="card-description">Custom DNS, filtering rules</p>
+          <span class="card-port">Port 3001</span>
+        </a>
+        <a href="http://192.168.1.2:5678" target="_blank" class="card n8n-card">
+          <div class="card-header">
+            <img src="./assets/n8n.svg" alt="n8n" class="card-icon" />
+            <span class="card-title">n8n</span>
+          </div>
+          <p class="card-description">AI Orchestrator</p>
+          <span class="card-port">Port 5678</span>
+        </a>
+      </div>
+    </div>
   </body>
 </html>
