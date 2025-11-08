@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'Absans';
-  src: url('./assets/Absans-Regular.woff2') format('woff2');
-}
-
 *,
 *::before,
 *::after {
@@ -29,7 +24,8 @@ html,
 body {
   height: 100%;
   margin: 0;
-  font-family: 'Absans', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
 body {
